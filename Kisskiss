@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            perspective: 8000px;
+        }
+
+        /* 视距 */
+
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            /* 水平居中 */
+            transform-style: preserve-3d;
+            /* 3D效果 */
+            animation: rotate 180s linear;
+        }
+
+        /* infinite linear; }自动旋转 */
+
+
+        .img {
+            vertical-align: top;
+        }
+
+        /* 垂直向上对齐 */
+
+
+        .cube>div {
+            position: absolute;
+            /* 绝对定位 */
+            opacity: 0.8;
+        }
+
+        /* 透明效果 */
+
+        .box1 {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box2 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5 {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        .box6 {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+
+        @keyframes rotate {
+            form {
+                transform: rotateX(0) rotateZ(10)
+            }
+
+            to {
+                transform: rotateY(20turn) rotateZ(20turn)
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="box1"><img src="./xue/1.jpg"></div>
+        <div class="box2"><img src="./xue/3.jpg"></div>
+        <div class="box3"><img src="./xue/4.jpg"></div>
+        <div class="box4"><img src="./xue/10.jpg"></div>
+        <div class="box5"><img src="./xue/17.jpg"></div>
+        <div class="box6"><img src="./xue/21.jpg"></div>
+</body>
+
+</html>
